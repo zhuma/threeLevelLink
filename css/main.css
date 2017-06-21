@@ -1,0 +1,535 @@
+/**
+ * Created by hanshaojie on 2017/5/8.
+ */
+a{
+    color: #fff;
+}
+/*登录页*/
+.zd-logo{
+    margin-top:20%;
+    text-align: center;
+}
+.zd-login{
+    margin-top:20%;
+    text-align: center;
+}
+.zd-login>p{
+    margin:1rem auto;
+    height:2rem;
+    background: #fff;
+    width:80%;
+}
+.zd-login>p>input{
+    width:90%;
+    height:100%;
+    display: inline-block;
+    line-height:2rem;
+}
+
+.zd-login>p>i{
+    font-size: 1rem;
+    line-height: 2rem;
+    padding:0 0.2rem;
+}
+.zd-login>p>a>button{
+    width:100%;
+    height:100%;
+    font-size:0.8rem;
+    color: #FFFFFF;
+}
+.zd-bg{
+    /*background: #10b0a1;*/
+    background: #F1A943;
+}
+
+/*主页*/
+.zd-tit-parent{
+    width:100%;
+    height: 2.2rem;
+    background-color: #f7f7f8;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left:.5rem;
+}
+.zd-tit{
+    color: #FFFFFF;
+}
+.zd-tit-black{
+    text-align: left;
+    padding-left:.5rem;
+}
+.mt{
+    margin-top:.3rem;
+}
+.zd-bg-white{
+    background: #fff;
+    color: #000000;
+}
+.zd-a-black{
+    color: #000 !important;
+}
+.zd-a-white{
+    color: #fff !important;
+}
+.zd-card{
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin:1rem auto;
+    text-align: center;
+}
+.card-content{
+    text-align: center;
+}
+.card-content>img{
+    display: block;
+    margin:0 auto;
+    width:30px;
+    height:30px;
+}
+.card-content>span{
+    margin-top:.5rem;
+    display: block;
+}
+.bn{
+    border:none !important;
+}
+.mn{
+    margin:0;
+}
+.padding-left-none{
+    padding-left:0 !important;
+}
+.padding-left-none>.item-inner{
+    padding-left:.75rem;
+}
+.padding-left-none>.item-inner>.item-title{
+    width:100%;
+    height:1rem;
+    line-height:1rem;
+    font-size:.75rem;
+}
+.zd-inner{
+    padding:0;
+}
+.bar .zd-scan{
+    display: block;
+    width:17px;
+    height:100%;
+    background: url("../img/scan.png") no-repeat center center;
+}
+.zd-option-list{
+    margin-top:0;
+}
+.zd-head-person{
+    margin:.3rem 0;
+    height:1rem;
+    line-height: 1rem;
+}
+.zd-state{
+    padding:0 0.2rem;
+    color: #fff;
+}
+.zd-bg-green{
+    background: #10b0a1;
+}
+.zd-bg-red{
+    background: red;
+}
+.list-block .item-link .item-inner{
+/*    padding-right:.5rem;
+    background: none;*/
+}
+/*#zd-eval-list>li{
+    background: url(../img/dot.png) no-repeat 1.5rem center;
+    padding-left: 2rem;
+    background-size: 10px 10px;
+}*/
+.zd-class-icon{
+    background: #F1A943;
+    color: #fff;
+    border-radius: 50%;
+    width:1rem;
+    height:1rem;
+    display: inline-block;
+    text-align: center;
+    line-height:1rem;
+    font-size:.6rem;
+    margin-right:.5rem;
+}
+/*考评录入*/
+.zd-form>p{
+    width:100%;
+    height:2rem;
+    line-height:2rem;
+    background: #FFFFFF;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.zd-form>p>em{
+    margin-left: .5rem;
+    font-size: .75rem;
+}
+.zd-form>p>a{
+    color: #999;
+    font-size: .8rem;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+#zd-option>li.active{
+    background: #10b0a1;
+    color: #FFFFFF;
+}
+.zd-radio{
+    margin-left: 0;
+    background: #fff;
+    height:2rem;
+    line-height:2rem;
+}
+.zd-radio>span{
+    text-align: center !important;
+    font-size:.75rem;
+}
+.zd-radio>span>em{
+    background: url("../img/radio.png") no-repeat left center;
+    background-size: 15px 15px;
+
+    padding-left:1rem;
+}
+.zd-radio>span>em.active{
+    background: url("../img/radio-checked.png") no-repeat left center;
+    background-size: 15px 15px;
+}
+#zd-dis .zd-score,#zd-add .zd-score{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: url("../img/check.png") no-repeat .5rem center;
+    -webkit-background-size:20px 20px;
+    background-size:20px 20px;
+    padding-left:2.2rem;
+}
+
+#zd-dis .active,#zd-add .active{
+    background: url("../img/checked.png") no-repeat .5rem center;
+    -webkit-background-size:20px 20px;
+    background-size:20px 20px;
+}
+.zd-evaluation-des{
+    width: 75%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.zd-evaluation-score{
+    width: 20%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+}
+.dn{
+    display: none;
+}
+
+.zd-normal>p{
+    font-size: .8rem;
+    height:2.2rem;
+    line-height:2.2rem;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zd-normal>p>input{
+    width:50%;
+    height:1.5rem;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    /*margin-right:.75rem;*/
+}
+.zd-normal>p>em{
+    width:40%;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    /*padding-left:.5rem;*/
+}
+.zd-normal>p>.error-bg{
+    background: #f9f2df;
+}
+.zd-upload{
+    background: #fff;
+    padding:.5rem 0 1rem;
+}
+.zd-textarea>em{
+    margin-left:.5rem;
+}
+.zd-textarea{
+    font-size: .75rem;
+    background: #fff;
+    padding:.5rem 0 1.5rem;
+}
+.zd-textarea>textarea{
+    width: 80%;
+    border: 1px solid #e7e7e7;
+    line-height: 1rem;
+    padding: 0.3rem;
+    margin-right: .75rem
+}
+.zd-foot{
+    width:60%;
+    height:2rem;
+    color: #FFFFFF !important;
+    font-size:.8rem;
+    text-align: center;
+    line-height:2rem;
+    margin:1rem auto;
+}
+.zd-select-class>li{
+    width:100%;
+    background: #FFFFFF;
+    text-indent: 1em;
+}
+.zd-select-class>li>p,.zd-select-class>li>ul>li>p{
+    position: relative;
+    width:100%;
+    display: block;
+    height:2rem;
+    line-height:2rem;
+}
+.zd-select-class>li>p>input[type='checkbox'],.zd-child>li>p>input[type='checkbox']{
+    position: absolute;
+    right:1rem;
+    top:0.7rem;
+}
+
+.zd-select-class>li>p:after,.zd-select-class>li>ul>li>p:after,.zd-student:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    clear: both;
+    display: inline-block;
+}
+.zd-select-class>li>ul>li{
+    text-indent:2em;
+}
+.zd-student{
+    text-indent: 0;
+    padding-left: 4em;
+    position: relative;
+}
+.zd-student>span{
+    position: relative;
+    margin: .5rem 0 .5rem 0;
+    display: inline-block;
+    width: 100%;
+}
+.zd-student>span>input{
+    float: right;
+    margin-right: 1rem;
+}
+.zd-upload-info{
+    font-size:.75rem;
+    padding-left:.5rem;
+    width:24%;
+}
+/*上传控件样式修改*/
+#uploader{
+    width:70%;
+    margin-right: .75rem;
+}
+.zd-add-pic{
+    width:60px;
+    height:60px;
+    background:url('../img/comera.png') no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    float: left;
+    margin-right:8px;
+}
+.webuploader-pick{
+    width:60px;
+    height:60px;
+}
+/*上传控件样式修改*/
+
+/*项目查看*/
+.zd-project-item{
+    font-size:.6rem !important;
+    height:auto !important;
+}
+.zd-project-del{
+    width:2rem;
+    height:1rem;
+    background:#E64340;
+    border-radius:6px;
+    color:#fff;
+    display:inline-block;
+    text-align:center;
+    line-height:1rem;
+}
+
+.zd-view-pic-btn{
+    color:#F1A943;
+}
+
+.zd-project-pic>img{
+    margin:10px 10px 0 0;
+}
+
+.zd-show-pic{
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    z-index: 999;
+}
+.zd-show-pic>img{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto auto;
+    max-width: 100%;
+}
+.zd-item-content{
+    padding-left:0 !important;
+}
+.zd-item-content .item-inner .item-title{
+    padding-left:.75rem;
+    font-size:.75rem;
+}
+.zd-item-content .item-inner .item-input input{
+    font-size:.75rem;
+}
+::-webkit-input-placeholder{
+    color: #3d4145;
+}
+/*搜索学生*/
+.zd-search-stu>li{
+    width: 100%;
+    background: #FFFFFF;
+    text-indent: 1em;
+    height:2rem;
+    line-height:2rem;
+    border-bottom:1px solid #e7e7e7;
+}
+
+/*德育统计*/
+.zd-statistics-tab,.zd-statistics-detail{
+    border:1px solid #e7e7e7;
+    width:100%;
+    background: #FFFFFF;
+}
+tr.zd-tab-class>th{
+    width:50%;
+}
+tr.zd-tab-class>th.active{
+    color: #F1A943;
+}
+.zd-statistics-tab tr td,.zd-statistics-tab tr th{
+    border:1px solid #e7e7e7;
+    height:1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+tr.no1{
+    color: red;
+}
+tr.no2{
+    color: #F1A943;
+}
+tr.no3{
+    color: #cc5200;
+}
+.zd-count-total{
+    text-decoration: underline;
+}
+.zd-no-data{
+    text-align: center;
+    padding: 1rem;
+    font-size: .6rem;
+}
+/*统计详情*/
+
+.zd-statistics-detail tr th, .zd-statistics-detail tr td{
+    height:1.5rem;
+    text-align: center;
+    border:1px solid #e7e7e7;
+}
+
+
+/*检查项详情列表*/
+.zd-evaluate-detail-list{
+    width:100%;
+    padding: .5rem;
+    font-size:.6rem;
+	background:#fff;
+}
+.zd-evaluate-detail-list section{
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: .5rem;
+}
+.zd-evaluate-detail-list section p{
+    padding:.3rem 0 .3rem .5rem;
+}
+.zd-evaluate-detail-list section p span{
+    color: #F1A943;
+}
+.zd-evaluate-detail-list section p.zd-big-tit{
+    font-size:.75rem;
+    padding-left:0;
+}
+.zd-evaluate-detail-list section p em.red{
+    color: red;
+}
+.zd-evaluate-detail-list section p img{
+    width:60px;
+    height:60px;
+    margin: 0 .5rem .5rem 0;
+}
+.zd-evaluate-detail-list section p.zd-tr{
+    text-align: right;
+}
+
+/*我的德育*/
+.zd-my-evaluation-tab{
+    width:100%;
+    background: #fff;
+}
+.zd-my-evaluation-tab tr th{
+    background: #F8F8F9;
+    font-weight:bold;
+}
+.zd-my-evaluation-tab tr th,.zd-my-evaluation-tab tr td{
+    text-align: center;
+    border:1px solid #e7e7e7;
+    height:1.5rem;
+}
+
+/*tab*/
+.buttons-tab .button.active{
+	color: #f1a943;
+    border-color: #f1a943;
+}
+
+
+
+
+
+
