@@ -1,4 +1,4 @@
- var threeLevelLink = {
+    var threeLevelLink = {
         gradeClass: '.zd-grade-level',//一级容器类
         classList: '.zd-class-list',//二级容器集合类
         classClass: '.zd-class-level',//二级容器类
@@ -49,6 +49,11 @@
                             'checkAttr': 'indeterminate',
                             'classFlag': true
                         });
+                        _this.isParentsCheck({
+                            'class': $(this).parents(pClassClass).find(pClass),
+                            'checkAttr': 'checked',
+                            'classFlag': false
+                        });
                         break;
                     default:
                         _this.isParentsCheck({
@@ -82,7 +87,7 @@
             var _this = this;
             $(document).on("click", curGrade, function (e) {
                 e.stopPropagation();
-                if ($(this).prop("checked")) {
+                if ($(this).prop("checked") || $(this).prop("indeterminate")) {
                     $(this).parents(_this.gradeClass).find(_this.classCheck + "," + _this.studentCheck).prop("indeterminate", false);
                     $(this).parents(_this.gradeClass).find(_this.classCheck + "," + _this.studentCheck).prop("checked", true);
                 } else {
@@ -126,7 +131,7 @@
             }
             if (count === 0 && countClass === 0) {
                 flag = 0;
-            } else if ((count > 0 && count < elements.length) || (countClass > 0 && countClass < elements.length) || (elements.length === 1 && countClass === 1)) {
+            } else if ((count > 0 && count < elements.length) || (countClass > 0 && countClass <= elements.length) || (elements.length === 1 && countClass === 1)) {
                 flag = 1;
             } else {
                 flag = 2;
@@ -156,6 +161,11 @@
                         'grade': obj.parents(pGradeClass).find(pGrade),
                         'checkAttr': 'indeterminate',
                         'gradeFlag': true
+                    });
+                    this.isParentsCheck({
+                        'grade': obj.parents(pGradeClass).find(pGrade),
+                        'checkAttr': 'checked',
+                        'gradeFlag': false
                     });
                     break;
                 default:
